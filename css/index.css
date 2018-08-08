@@ -1,0 +1,306 @@
+@import url("base.css");
+header{
+    width: 100%;
+    height: 40px;
+    background: #444;
+}
+main{
+    height: 100%;
+    /*background: red;*/
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header div{
+    font-size: 10px;
+    color: #A7A7A9;
+}
+nav{
+    width: 100%;
+    height: 44px;
+    background: #333;
+}
+nav ul{
+    height: 100%;
+    /*background: red;*/
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul a{
+    font-size: 12px;
+    color: white;
+}
+nav ul a:hover{
+    color: #b6b6b6;
+}
+/*内容*/
+.iphoneX a{
+    width: 100%;
+    background: #f9f9f9;
+    margin-bottom: 14px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.iphoneX a h1{
+    color: #111111;
+    text-align: center;
+    font-family: SF Pro SC;
+}
+.iphoneX a h2{
+    color: #111;
+    text-align: center;
+    font-weight: normal;
+    font-family: "PingFang SC";
+}
+.buy{
+    width: 171px;
+    height: 43px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buy span{
+    color: #1b7acb;
+    text-align: center;
+    font-size: 16px;
+}
+.iphone_img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*卖课本*/
+.macbook a{
+    width: 100%;
+    margin-bottom: 14px;
+    display: block;
+    overflow: hidden;
+}
+.macbook a h1{
+    color: white;
+    text-align: center;
+    font-family: SF Pro SC;
+}
+.macbook a h2{
+    color: white;
+    text-align: center;
+    font-weight: normal;
+}
+.buy_mac span{
+    color: white;
+}
+/*六宫格*/
+.six_piece{
+    display: flex;
+    flex-wrap: wrap;
+}
+.six_piece li{
+    width: 50%;
+    display: block;
+    border-left: 12px solid #ffffff;
+    border-right: 6px solid #ffffff;
+    border-bottom: 12px solid #ffffff;
+    box-sizing: border-box;
+}
+.six_piece li:nth-child(2n){
+    border-left: 6px solid #ffffff;
+    border-right: 12px solid #ffffff;
+}
+.six_piece li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.six_piece li h1{
+    color: #fefefe;
+    text-align: center;
+}
+.six_piece li h2{
+    width: 70%;
+    color: #fefefe;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: normal;
+}
+
+
+/*PC端*/
+@media screen and (min-width: 1024px){
+    main{
+        width: 976px;
+    }
+    nav ul{
+        width: 976px;
+    }
+    .min{
+        display: none;
+    }
+    .iphoneX a{
+        height: 580px;
+    }
+    .iphoneX a h1{
+        font-size: 40px;
+        line-height: 60px;
+        margin-top: 87px;
+    }
+    .iphoneX a h2{
+        font-size: 22px;
+        line-height: 44px;
+    }
+    .iphone_img{
+        width: 1068px;
+        height: 337px;
+        background: url("../img/iphone_x_large.jpg") no-repeat center/100%;
+    }
+    .macbook a{
+        height: 580px;
+        background: url("../img/macbook_pro_performance_large.jpg") no-repeat center/2560px 624px;
+    }
+    .macbook a h1{
+        font-size: 40px;
+        line-height: 60px;
+        margin-top: 69px;
+    }
+    .macbook a h2{
+        font-size: 22px;
+        line-height: 44px;
+    }
+    .six_piece li{
+        height: 592px;
+        background: url("../img/iphone_x_a11_large.jpg") no-repeat center/1262px 580px;
+    }
+    .six_piece li h1{
+        font-size: 32px;
+        line-height: 53px;
+        margin-top: 47px;
+    }
+    .six_piece li h2{
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+/*iPad端*/
+@media screen and (max-width: 1024px){
+    main{
+        padding-right: 22px;
+    }
+    nav ul{
+        padding: 0 22px;
+    }
+    .min{
+        display: none;
+    }
+    .iphoneX a{
+        height: 569px;
+    }
+    .iphoneX a h1{
+        font-size: 32px;
+        line-height: 50px;
+        margin-top: 99px;
+    }
+    .iphoneX a h2{
+        font-size: 20px;
+        line-height: 37px;
+    }
+    .iphone_img{
+        width: 736px;
+        height: 336px;
+        background: url("../img/iphone_x_medium.jpg") no-repeat center/100%;
+    }
+    .macbook a{
+        height: 569px;
+        background: url("../img/macbook_pro_performance_medium.jpg") no-repeat center/1068px 617px;
+    }
+    .macbook a h1{
+        font-size: 32px;
+        line-height: 48px;
+        margin-top: 80px;
+    }
+    .macbook a h2{
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .six_piece li{
+        height: 490px;
+        background: url("../img/iphone_x_a11_medium.jpg") no-repeat center/516px 490px;
+    }
+    .six_piece li h1{
+        font-size: 28px;
+        line-height: 39px;
+        margin-top: 40px;
+    }
+    .six_piece li h2{
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+/*手机端*/
+@media screen and (max-width: 768px) {
+    nav ul{
+        padding: 0 22px;
+    }
+    .max{
+        display: none;
+    }
+    .min{
+        display: block;
+    }
+    .iphoneX a{
+        height: 500px;
+    }
+    .iphoneX a h1{
+        font-size: 24px;
+        line-height: 37px;
+        margin-top: 27px;
+    }
+    .iphoneX a h2{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .iphone_img{
+        width: 320px;
+        height: 353px;
+        background: url("../img/iphone_x_small.jpg") no-repeat center/100%;
+    }
+    .macbook a{
+        height: 500px;
+        background: url("../img/macbook_pro_performance_small.jpg") no-repeat center/736px 548px;
+    }
+    .macbook a h1{
+        font-size: 24px;
+        line-height: 36px;
+        margin-top: 85px;
+    }
+    .macbook a h2{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .six_piece li{
+        width: 100%;
+        height: 506px;
+        background: url("../img/iphone_x_a11_small.jpg") no-repeat center/736px 548px;
+        border-left: none;
+        border-right: none;
+    }
+    .six_piece li:nth-child(2n){
+        border-left: none;
+        border-right: none;
+    }
+    .six_piece li h1{
+        font-size: 28px;
+        line-height: 43px;
+        margin-top: 33px;
+    }
+    .six_piece li h2{
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
