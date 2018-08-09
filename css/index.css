@@ -130,7 +130,153 @@ nav ul a:hover{
     margin: 0 auto;
     font-weight: normal;
 }
+/*底部*/
+.pc-pad{
+    width: 100%;
+    height: 467px;
+    background: #f1f1f1;
+}
+.iphone_list{
+    margin: 0 auto;
+    overflow: hidden;
+}
+.iphone_list li{
+    width: 20%;
+    /*background: blue;*/
+    float: left;
+}
+.iphone_list h3{
+    font-size: 10px;
+    color: #323232;
+    text-align: left;
+    line-height: 26px;
+}
+.iphone_list a{
+    display: block;
+    font-size: 10px;
+    color: #545454;
+    text-align: left;
+    line-height: 25px;
+}
+.iphone_list a:hover{
+    text-decoration: underline;
+    color: #323232;
+}
+.iphone_tel{
+    height: 33px;
+    /*background: green;*/
+    margin: 0 auto;
+}
+.iphone_tel div{
+    font-size: 10px;
+    line-height: 32px;
+    border-bottom: 1px solid #d5d5d5;
+    color: #878787;
+}
+.iphone_tel div a{
+    color: #0980d2;
+}
+.iphone_tel div a:hover{
+    text-decoration: underline;
+}
+.iphone-copy-place{
 
+    height: 33px;
+    margin: 0 auto;
+}
+.iphone_copy{
+    height: 100%;
+    font-size: 10px;
+    color: #878787;
+    line-height: 37px;
+    float: left;
+}
+.iphone_place{
+    width: 44px;
+    height: 100%;
+    float: right;
+    font-size: 8px;
+    color: #545454;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.iphone_copy a{
+    color: #545454;
+    padding: 0 11px 0 10px;
+    border-right: 1px solid #d5d5d5;
+}
+.iphone_copy a:first-child{
+    margin-left: 20px;
+}
+.iphone_copy a:last-child{
+    border: none;
+}
+.iphone_copy a:hover{
+    text-decoration: underline;
+    color: #323232;
+}
+.iphone_icp{
+    height: 40px;
+    margin: 0 auto;
+    font-size: 10px;
+    color: #989898;
+    line-height: 24px;
+}
+.iphone_icp a{
+    color: #989898;
+}
+.iphone_icp a:hover{
+    text-decoration: underline;
+}
+
+.phone{
+    height: 440px;
+    background: #f1f1f1;
+    padding: 0 16px;
+    font-size: 10px;
+    color: #a6a7a6;
+    line-height: 20px;
+    display: none;
+}
+.foot_top{
+    margin-bottom: 18px;
+}
+.foot_top li{
+    height: 37px;
+    border-bottom: 1px solid #d5d5d5;
+    font-size: 10px;
+    line-height: 37px;
+}
+.foot_top li a{
+    display: flex;
+    justify-content: space-between;
+    color: #323232;
+}
+.phone-place{
+    display: flex;
+    justify-content: flex-start;
+}
+.phone-copy a{
+    font-size: 10px;
+    color: #545454;
+    padding: 0 10px 0 10px;
+    border-left: 1px solid #d5d5d5;
+}
+.phone-copy a:first-child{
+    padding-left: 0;
+    border-left: none;
+}
+.under:hover{
+    text-decoration: underline;
+}
+.hui{
+    color: #989898;
+}
+.blue{
+    color: #0970c7;
+}
 
 /*PC端*/
 @media screen and (min-width: 1024px){
@@ -186,6 +332,24 @@ nav ul a:hover{
         font-size: 18px;
         line-height: 27px;
     }
+    .iphone_list{
+        width: 980px;
+    }
+    .iphone_list li{
+        height: 364px;
+    }
+    .iphone_list h3{
+        margin-top: 34px;
+    }
+    .iphone_tel{
+        width: 980px;
+    }
+    .iphone-copy-place{
+        width: 980px;
+    }
+    .iphone_icp{
+        width: 980px;
+    }
 }
 /*iPad端*/
 @media screen and (max-width: 1024px){
@@ -240,6 +404,24 @@ nav ul a:hover{
     .six_piece li h2{
         font-size: 16px;
         line-height: 22px;
+    }
+    .iphone_list{
+        padding: 0 22px;
+    }
+    .iphone_list li{
+        height: 345px;
+    }
+    .iphone_list h3{
+        margin-top: 16px;
+    }
+    .iphone_tel{
+        padding: 0 22px;
+    }
+    .iphone-copy-place{
+        padding: 0 22px;
+    }
+    .iphone_icp{
+        padding: 0 22px;
     }
 }
 /*手机端*/
@@ -302,5 +484,11 @@ nav ul a:hover{
     .six_piece li h2{
         font-size: 14px;
         line-height: 22px;
+    }
+    .phone{
+        display: block;
+    }
+    .pc-pad{
+        display: none;
     }
 }
